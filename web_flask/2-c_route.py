@@ -20,7 +20,7 @@ def howdy():
 
 @app.route('/c/<text>')
 def bonjour(text):
-    return 'C {}'.format(text)
+    return 'C {}'.format(text.replace("_", " "))
 
 
 if __name__ == "__main__":
