@@ -29,7 +29,7 @@ def hola(text="is cool"):
     return 'Python {}'.format(text.replace("_", " "))
 
 
-@app.route('/number/int:<n>')
+@app.route('/number/<int:n>')
 def ni_hao():
     return '{} is a number'.format(n)
 
