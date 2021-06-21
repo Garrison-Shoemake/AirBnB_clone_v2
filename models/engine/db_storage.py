@@ -83,7 +83,6 @@ class DBStorage:
             autocommit=False)
         Session = scoped_session(session_factory)
         self.__session = Session()
-        self.save()
 
     def close(self):
         self.__session.close()
