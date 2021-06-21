@@ -85,4 +85,4 @@ class DBStorage:
         self.save()
 
     def close(self):
-        self.__session.remove()
+        self.__session.close()
