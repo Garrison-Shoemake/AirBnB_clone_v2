@@ -23,6 +23,7 @@ def bonjour(text):
     return 'C {}'.format(text.replace("_", " "))
 
 
+@app.route('/python/')
 @app.route('/python/(<text>)')
 def hola(text="is cool"):
     return 'Python {}'.format(text.replace("_", " "))
