@@ -30,7 +30,7 @@ def hola(text="is cool"):
 
 
 @app.route('/number/<int:n>')
-def ni_hao():
+def ni_hao(n):
     return '{} is a number'.format(n)
 
 
